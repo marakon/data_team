@@ -9,3 +9,4 @@ Analizator 2000 - almost* fully automated script for:
 - Ploting charts out of the data
 - Saving everything in files(.txt for informations and .png for generated charts)
 
+*You need to past a .tar.gz file in script location and after all manually rename generated plots.
