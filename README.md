@@ -17,3 +17,14 @@ Used:
 - tarfile
 - json
 - matplotlib
+
+
+Procedure of the program is following:
+1) Tar class is taking the file name given by user and un-taring it using un_tar_file function
+2) JsonOperations class is categorizing the data into two lists(json_fse and json_dd) using categorize_json function and saving it into raw_fse and raw_dd variables
+3) Once data is categorized the function present_data is showing us which data we have received from the .tar.gz file
+4) read function takes the raw categorized lists and fetches its content into dd_data and fse_data lists
+5) At this point we are free to calculate the data by using one of the functions: 
+    - txt_file_calculation(calcualtes mean value, sum, etc.)
+    - bar_plot(generating bar plots)
+    - pie_plot(generating pie plots)
