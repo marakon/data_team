@@ -34,7 +34,7 @@ def txt_file_calculation(dd_data, fse_data):
         file.write(mean_dc)
         file.write(sum_storage)
 
-    for data in dd_data:
+    for data in fse_data:
         mean_dc = "Mean domain count per dc: " + count_data.mean_dc(data)
         sum_storage = "\nStorage used in MB: " + count_data.sum_storage(data)
         file.write(mean_dc)
@@ -42,14 +42,14 @@ def txt_file_calculation(dd_data, fse_data):
 
 def bar_plot(dd_data, fse_data):
     for data in dd_data:
-        count_data.data_center(data)
+        count_data.dd_data_center(data)
         val, leb, both=count_data.val_leb()
         plot = Plot(val, leb, both)
         plot.save_bar()
 
 def pie_plot(dd_data, fse_data):
-    for data in dd_data:
-        count_data.data_center(data)
+    for data in fse_data:
+        count_data.fse_data_center(data)
         val, leb, both=count_data.val_leb()
         plot = Plot(val, leb, both)
         plot.save_pie()

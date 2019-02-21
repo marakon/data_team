@@ -13,7 +13,7 @@ class Count:
         return values, label, both
 
     def action(self, data):
-        print("Counting data...\n")
+        print("Counting actions...\n")
         self.df_head = data.action.value_counts().head(5).count()
         self.df = data.action.value_counts()
         return df_head, df
@@ -27,10 +27,16 @@ class Count:
     def sum_storage(self, data):
         return str(data.storage_used_MB.value_counts().sum())
 
-    def data_center(self, data):
-        print(f"Counting dc for ...\n")
+    def dd_data_center(self, data):
+        print(f"Counting data center...\n")
         self.df_head = data.data_center.value_counts().head(5).count()
         self.df = data.data_center.value_counts()
+        return df_head, df
+
+    def fse_data_center(self, data):
+        print(f"Counting dc for ...\n")
+        self.df_head = data.datacenter.value_counts().head(5).count()
+        self.df = data.datacenter.value_counts()
         return df_head, df
 
     def continent(self, data):
