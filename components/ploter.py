@@ -13,6 +13,6 @@ class Plot:
         plt.pie(self.values, counterclock=True)
         plt.legend(self.label, loc=3)
         fig1 = plt.gcf()
-        name = "plot.png"
+        name = "pie_plot.png"
         fig1.savefig(name, dpi=700)
         plt.show()
