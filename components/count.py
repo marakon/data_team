@@ -9,7 +9,8 @@ class Count:
         for i in range(0, self.df_head):
             values[i] = self.df.iloc[i]
             label[i] = self.df.index[i] + ": " + str(values[i])
-        return values, label
+        both = [i for i, _ in enumerate(values)]
+        return values, label, both
 
     def action(self, data):
         print("Counting data...\n")
