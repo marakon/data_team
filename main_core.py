@@ -1,14 +1,11 @@
 import json
 import pandas as pd
-import numpy as np
-import matplotlib as mpl
 
 from components.count import Count
 from components.ploter import Plot
 from components.read_json import JsonOperations
 from components.un_tar import Tar
 
-mpl.rcParams['font.size'] = 6.0
 file_name = input('Enter file name: ')
 folder_name = file_name + "/"
 file = open("values.txt", "w")
@@ -34,11 +31,11 @@ def txt_file_calculation(dd_data, fse_data):
         file.write(mean_dc)
         file.write(sum_storage)
 
-    for data in fse_data:
-        mean_dc = "Mean domain count per dc: " + count_data.mean_dc(data)
-        sum_storage = "\nStorage used in MB: " + count_data.sum_storage(data)
-        file.write(mean_dc)
-        file.write(sum_storage)
+    # for data in fse_data:
+    #     mean_dc = "Mean domain actions per dc: " + count_data.mean_dc(data)
+    #     sum_storage = "\nStorage used in MB: " + count_data.sum_storage(data)
+    #     file.write(mean_dc)
+    #     file.write(sum_storage)
 
 def bar_plot(dd_data, fse_data):
     for data in dd_data:

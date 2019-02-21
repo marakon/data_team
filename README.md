@@ -1,7 +1,7 @@
 # data_team
 Recuruitment Task
 
-Analizator 2000 - almost* fully automated script for:
+Analizator 2000 - fully* automated script for:
 - Un-taring provided data
 - Getting and categorizing json files
 - Reading json files content
@@ -9,4 +9,4 @@ Analizator 2000 - almost* fully automated script for:
 - Ploting charts out of the data
 - Saving everything in files(.txt for informations and .png for generated charts)
 
-*You need to past a .tar.gz file in script location and after all manually rename generated plots.
+*You just need to paste the .tar.gz file into the script location and after generating each plot rename it.
