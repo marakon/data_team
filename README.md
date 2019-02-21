@@ -1,31 +1,27 @@
 # data_team
 Recuruitment Task
 
-Analizator 2000 - fully* automated script for:
-- Un-taring provided data
+Analizator 2000 - automated script for:
+- Un-taring provided package
 - Getting and categorizing json files
 - Reading json files content
-- Getting informations from the data
+- Getting specified pieces of data
 - Ploting charts from the data
-- Saving everything in files(.txt for informations and .png for generated charts)
+- Saving findings in newly created files (.png for generated charts or .txt for other outcome)
 
-*You just need to paste the .tar.gz file into the script location and after generating each plot rename it.
-
-
-Used:
+Libraries used:
 - pandas
 - tarfile
 - json
 - os
 - matplotlib
 
-
-Procedure of the program is following:
-1) Tar class is taking the file name given by user and un-taring it using un_tar_file function
-2) JsonOperations class is categorizing the data into two lists(json_fse and json_dd) using categorize_json function and saving it into raw_fse and raw_dd variables
-3) Once data is categorized the function present_data is showing us which data we have received from the .tar.gz file
-4) read function takes the raw categorized lists and fetches its content into dd_data and fse_data lists
-5) At this point we are free to calculate the data by using one of the functions: 
-    - txt_file_calculation(calcualtes mean value, sum, etc.)
-    - bar_plot(generating bar plots)
-    - pie_plot(generating pie plots)
+Procedure:
+1) Tar class takes in file name given by user and un-tares it.
+2) JsonOperations class divides files into two lists(json_fse and json_dd) and saves it as raw_fse and raw_dd variables.
+3) Once data is categorized function present_data shows lists of files received from the .tar.gz package.
+4) read function takes the raw categorized lists, fetches its content and puts it into dd_data and fse_data lists.
+5) At this point we are free to compute the data by using one of the functions: 
+    - txt_file_calculation (calcualtes mean value, sum, etc.)
+    - bar_plot (generates bar plots)
+    - pie_plot (generates pie plots).
