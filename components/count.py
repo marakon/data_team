@@ -33,19 +33,9 @@ class Count:
         self.df = data.data_center.value_counts()
         return df_head, df
 
-    def country(self, data):
-        self.df_head = data.country.value_counts().head(5).count()
-        self.df = data.country.value_counts()
-        return df_head, df
-
     def continent(self, data):
-        self.df_head = data.continent.value_counts().head(5).count()
+        self.df_head = data.continent.value_counts().count()
         self.df = data.continent.value_counts()
-        return df_head, df
-
-    def city(self, data):
-        self.df_head = data.city.value_counts().head(5).count()
-        self.df = data.city.value_counts()
         return df_head, df
 
     def tfe(self, data):
