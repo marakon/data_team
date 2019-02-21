@@ -15,6 +15,7 @@ class Plot:
         plt.legend(self.label, loc=3)
         fig1 = plt.gcf()
         fig1.savefig("pie_plot.png", dpi=700)
+        print("Time for you to rename the saved plot file!\n")
         plt.show()
 
     def save_bar(self):
@@ -23,4 +24,5 @@ class Plot:
         plt.xticks(self.both, self.label)
         fig1 = plt.gcf()
         fig1.savefig("bar_plot.png", dpi=700)
+        print("Time for you to rename the saved plot file!\n")
         plt.show()
