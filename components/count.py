@@ -59,3 +59,9 @@ class Count:
         self.df_head = data.domain_status.value_counts().head(5).count()
         self.df = data.domain_status.value_counts()
         return df_head, df
+
+    def hours(self, data):
+        print(f"Counting dc ...\n")
+        self.df_head = data.timestamp.dt.hour.value_counts().count()
+        self.df = data.timestamp.dt.hour.value_counts()
+        return df_head, df

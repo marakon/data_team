@@ -28,16 +28,16 @@ def read(raw_dd, raw_fse):
 
 def txt_file_calculation(dd_data, fse_data):
     for data in dd_data:
-        mean_dc = "Mean domain count per dc: " + count_data.mean_dc(data)
+        mean_dc = "\nMean domain count per dc: " + count_data.mean_dc(data)
         sum_storage = "\nStorage used in MB: " + count_data.sum_storage(data)
         file.write(mean_dc)
         file.write(sum_storage)
 
-    # for data in fse_data:
-    #     mean_dc = "Mean domain actions per dc: " + count_data.mean_dc(data)
-    #     sum_storage = "\nStorage used in MB: " + count_data.sum_storage(data)
-    #     file.write(mean_dc)
-    #     file.write(sum_storage)
+    for data in fse_data:
+        mean_dc = "Mean domain actions per dc: " + count_data.mean_dc(data)
+        sum_storage = "\nStorage used in MB: " + count_data.sum_storage(data)
+        file.write(mean_dc)
+        file.write(sum_storage)
 
 def bar_plot(dd_data, fse_data):
     for data in dd_data:
@@ -56,8 +56,12 @@ def pie_plot(dd_data, fse_data):
 Tar(file_name).un_tar_file()
 
 raw_fse, raw_dd = json.categorize_json(folder_name)
-# FSE - File System Event
-# DD - Domain Data
+
+""" 
+FSE - File System Event
+DD - Domain Data
+"""
+
 present_data(raw_dd, raw_fse)
 dd_data, fse_data = read(raw_dd, raw_fse)
 
