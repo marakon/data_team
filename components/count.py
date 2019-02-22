@@ -1,9 +1,12 @@
+import logging
 import pandas as pd
 
+logger = logging.getLogger(__name__)
 df, df_head = '', ''
 
 class Count:
     def val_leb(self):
+        logging.getLogger(__name__).info("Preparing data for calculations.")
         values = [0]*self.df_head
         label = [0]*self.df_head
         for i in range(0, self.df_head):
@@ -12,56 +15,50 @@ class Count:
         both = [i for i, _ in enumerate(values)]
         return values, label, both
 
-    def action(self, data):
-        print("Counting actions...\n")
+    def top_action(self, data):
+        logging.getLogger(__name__).info("Counting top 5 actions for FSE.")
         self.df_head = data.action.value_counts().head(5).count()
         self.df = data.action.value_counts()
         return df_head, df
     
     def mean_actions(self, data):
+        logging.getLogger(__name__).info("Counting mean value of actions for FSE.")
         return str(data.action.value_counts().mean())
 
-    def mean_dc(self, data):
+    def dd_mean_dc(self, data):
+        logging.getLogger(__name__).info("Counting mean value of domains per data center.")
         return str(data.data_center.value_counts().mean())
 
     def sum_storage(self, data):
+        logging.getLogger(__name__).info("Summing used storage.")
         return str(data.storage_used_MB.value_counts().sum())
 
     def dd_data_center(self, data):
-        print(f"Counting data center...\n")
-        self.df_head = data.data_center.value_counts().head(5).count()
+        logging.getLogger(__name__).info("Counting domains per data center.")
+        self.df_head = data.data_center.value_counts().head().count()
         self.df = data.data_center.value_counts()
         return df_head, df
 
     def fse_data_center(self, data):
-        print(f"Counting dc for ...\n")
-        self.df_head = data.datacenter.value_counts().head(5).count()
+        logging.getLogger(__name__).info("Counting actions per data center.")
+        self.df_head = data.datacenter.value_counts().head().count()
         self.df = data.datacenter.value_counts()
         return df_head, df
 
     def continent(self, data):
+        logging.getLogger(__name__).info("Counting actions per continent.")
         self.df_head = data.continent.value_counts().count()
         self.df = data.continent.value_counts()
         return df_head, df
 
-    def tfe(self, data):
-        self.df_head = data.target_file_extension.value_counts().head(5).count()
-        self.df = data.target_file_extension.value_counts()
-        return df_head, df
-
     def app_inferred(self, data):
+        logging.getLogger(__name__).info("Counting top 5 most used apps.")
         self.df_head = data.app_inferred.value_counts().head(5).count()
         self.df = data.app_inferred.value_counts()
         return df_head, df
 
-    def domain_status(self, data):
-        print(f"Counting dc ...\n")
-        self.df_head = data.domain_status.value_counts().head(5).count()
-        self.df = data.domain_status.value_counts()
-        return df_head, df
-
     def hours(self, data):
-        print(f"Counting dc ...\n")
+        logging.getLogger(__name__).info("Counting activity each hour.")
         self.df_head = data.timestamp.dt.hour.value_counts().count()
         self.df = data.timestamp.dt.hour.value_counts()
         return df_head, df

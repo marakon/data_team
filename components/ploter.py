@@ -1,6 +1,8 @@
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import shutil
+import logging
+
+logger = logging.getLogger(__name__)
 
 mpl.rcParams['font.size'] = 6.0
 
@@ -11,6 +13,7 @@ class Plot:
         self.both = both
 
     def save_pie(self):
+        logging.getLogger(__name__).info("Plotting pie plot of given data.")
         plt.pie(self.values, counterclock=True)
         plt.legend(self.label, loc=3)
         fig1 = plt.gcf()
@@ -19,6 +22,7 @@ class Plot:
         plt.show()
 
     def save_bar(self):
+        logging.getLogger(__name__).info("Plotting bar plot of given data.")
         plt.style.use('ggplot')
         plt.bar(self.both, self.values, color='green')
         plt.xticks(self.both, self.label)
