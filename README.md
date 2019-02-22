@@ -17,7 +17,7 @@ Libraries used:
 - matplotlib
 
 Procedure:
-1) Paste the package, Tar class takes in file name given by user and un-tares it.
+1) Paste the package, script takes the package with given file name and un-tares it.
 2) JsonOperations class divides files into two lists(json_fse and json_dd) and saves it as raw_fse and raw_dd variables.
 3) Once data is categorized function present_data shows lists of files received from the .tar.gz package.
 4) read function takes the raw categorized lists, fetches its content and puts it into dd_data and fse_data lists.
