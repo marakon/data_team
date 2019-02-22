@@ -46,19 +46,19 @@ class Count:
         return df_head, df
 
     def continent(self, data):
-        log.info("Counting actions per continent.")
+        log.info("Counting actions for FSE per continent.")
         self.df_head = data.continent.value_counts().count()
         self.df = data.continent.value_counts()
         return df_head, df
 
     def app_inferred(self, data):
-        log.info("Counting top 5 most used apps.")
+        log.info("Counting top 5 most used apps for FSE.")
         self.df_head = data.app_inferred.value_counts().head(5).count()
         self.df = data.app_inferred.value_counts()
         return df_head, df
 
     def hours(self, data):
-        log.info("Counting activity each hour.")
+        log.info("Counting activity each hour for FSE.")
         self.df_head = data.timestamp.dt.hour.value_counts().count()
         self.df = data.timestamp.dt.hour.value_counts()
         return df_head, df

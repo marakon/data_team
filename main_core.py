@@ -17,7 +17,7 @@ console.setLevel(logging.INFO)
 formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
 console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
-log = logging.getLogger('main_core')
+log = logging.getLogger("main_core")
 
 
 def present_data(raw_dd, raw_fse):
@@ -66,7 +66,6 @@ def pie_plot(dd_data, fse_data):
 
 file_name = input('Enter file name: ')
 folder_name = file_name + "/"
-log.info(f'Defined file and folder name: {folder_name}{file_name}.tar.gz')
 json = JsonOperations()
 count_data = Count()
 
