@@ -1,10 +1,9 @@
-import json, logging
+import json, logging, tarfile
 import pandas as pd
 
 from components.count import Count
 from components.ploter import Plot
 from components.read_json import JsonOperations
-from components.un_tar import Tar
 
 
 logging.basicConfig(level=logging.DEBUG,
@@ -19,6 +18,13 @@ console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 log = logging.getLogger("main_core")
 
+
+def un_tar_file(file_name):
+    log.info(f"Opening file: {file_name}.tar.gz")
+    tar = tarfile.open(file_name + ".tar.gz")
+    tar.extractall()
+    tar.close()
+    log.info(f"{file_name} opened.")
 
 def present_data(raw_dd, raw_fse):
     log.info('Domain data:')
@@ -69,7 +75,7 @@ folder_name = file_name + "/"
 json = JsonOperations()
 count_data = Count()
 
-Tar(file_name).un_tar_file()
+un_tar_file(file_name)
 raw_fse, raw_dd = json.categorize_json(folder_name)
 
 """ 
