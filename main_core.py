@@ -98,7 +98,7 @@ folder_name = file_name + "/"
 json = JsonOperations()
 count_data = Count()
 
-# un_tar_file(file_name)
+un_tar_file(file_name)
 raw_fse, raw_dd = json.categorize_json(folder_name)
 
 present_data(raw_dd, raw_fse)
