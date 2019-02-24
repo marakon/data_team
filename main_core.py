@@ -1,9 +1,12 @@
+#!/usr/bin/env python
 import json, logging, tarfile
 import pandas as pd
 
 from components.count import Count
 from components.ploter import Plot
 from components.read_json import JsonOperations
+
+__author__ = "Mateusz Osinski"
 
 
 logging.basicConfig(level=logging.DEBUG,
