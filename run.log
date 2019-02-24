@@ -1,0 +1,48 @@
+24-02-19 12:39:26 main_core    INFO     Opening file: data.tar.gz
+24-02-19 12:39:52 main_core    INFO     data opened.
+24-02-19 12:39:52 components.read_json INFO     Dividing data between raw_fse and raw_dd.
+24-02-19 12:39:52 main_core    INFO     Domain data:
+24-02-19 12:39:52 main_core    INFO     data/domain_data.json
+24-02-19 12:39:52 main_core    INFO     File System Event data:
+24-02-19 12:39:52 main_core    INFO     data/fse_data-000000000000.json
+24-02-19 12:39:52 main_core    INFO     data/fse_data-000000000001.json
+24-02-19 12:39:52 main_core    INFO     data/fse_data-000000000002.json
+24-02-19 12:39:52 main_core    INFO     data/fse_data-000000000003.json
+24-02-19 12:39:52 components.read_json INFO     Feating data from raw data/domain_data.json.
+24-02-19 12:39:56 components.read_json INFO     Feating data from raw data/fse_data-000000000000.json.
+24-02-19 12:44:12 components.read_json INFO     Feating data from raw data/fse_data-000000000001.json.
+24-02-19 12:48:41 components.read_json INFO     Feating data from raw data/fse_data-000000000002.json.
+24-02-19 12:54:52 components.read_json INFO     Feating data from raw data/fse_data-000000000003.json.
+24-02-19 13:00:12 components.count INFO     Counting mean value of domains per data center.
+24-02-19 13:00:13 components.count INFO     Summing used storage.
+24-02-19 13:00:13 components.count INFO     Counting domains per data center.
+24-02-19 13:00:13 components.count INFO     Preparing data for calculation.
+24-02-19 13:00:13 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 13:00:13 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:13 matplotlib.font_manager DEBUG    findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Users/mateusz/anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+24-02-19 13:00:14 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:14 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:29 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:29 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:30 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:30 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:30 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:30 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:33 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:33 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:33 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:33 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:33 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:37 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:37 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:37 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:38 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:38 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:51 components.count INFO     Counting actions for FSE per continent.
+24-02-19 13:00:51 components.count INFO     Preparing data for calculation.
+24-02-19 13:00:51 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 13:00:52 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:53 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:53 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 13:00:55 components.count INFO     Counting activity each hour for FSE.
+24-02-19 13:00:56 components.count INFO     Preparing data for calculation.

@@ -25,7 +25,7 @@ class Plot:
         log.info("Plotting bar plot of given data.")
         plt.style.use('ggplot')
         plt.bar(self.both, self.values, color='green', width=30)
-        plt.xticks(self.both, self.label, rotation=45)
+        plt.xticks(self.both, self.label)
         fig1 = plt.gcf()
         fig1.savefig("bar_plot.png", dpi=700)
         print("Time for you to rename the saved plot file!\n")
