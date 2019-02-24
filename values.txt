@@ -1,0 +1,3 @@
+
+Mean domain count per dc: 119631.33333333333
+Storage in MB: 358894
