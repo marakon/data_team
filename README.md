@@ -1,13 +1,13 @@
 # data_team
 Recuruitment Task
 
-Analizator 2000 - automated script for:
+Automated script for:
 - Un-taring provided package
 - Getting and categorizing json files
 - Reading json files content
 - Getting specified pieces of data
 - Ploting charts from the data
-- Saving findings in newly created files (.png for generated charts or .txt for other outcome)
+- Saving findings in newly created files (.png for generated charts and .txt for other outcome)
 
 Libraries used:
 - pandas
@@ -15,6 +15,7 @@ Libraries used:
 - json
 - os
 - matplotlib
+-logging
 
 Procedure:
 1) Paste the package, script takes the package with given file name and un-tares it.

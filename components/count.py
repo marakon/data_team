@@ -62,3 +62,15 @@ class Count:
         self.df_head = data.timestamp.dt.hour.value_counts().count()
         self.df = data.timestamp.dt.hour.value_counts()
         return df_head, df
+
+    def dd_domain_status(self, data):
+        log.info("Counting domain statuses.")
+        self.df_head = data.domain_status.value_counts().head().count()
+        self.df = data.domain_status.value_counts()
+        return df_head, df
+
+    def top_active_domains(self, data):
+        log.info("Counting top 5 most active domains for FSE.")
+        self.df_head = data.workgroup_id.value_counts().head(5).count()
+        self.df = data.workgroup_id.value_counts()
+        return df_head, df
