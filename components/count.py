@@ -1,5 +1,8 @@
+#!/usr/bin/env python
 import logging
 import pandas as pd
+
+__author__ = "Mateusz Osinski"
 
 log = logging.getLogger(__name__)
 df, df_head = '', ''
@@ -11,7 +14,7 @@ class Count:
         label = [0]*self.df_head
         for i in range(0, self.df_head):
             values[i] = self.df.iloc[i]
-            label[i] = self.df.index[i] + ": " + str(values[i])
+            label[i] = self.df.index[i] + str(f'\n{values[i]}')
         both = [i for i, _ in enumerate(values)]
         return values, label, both
 

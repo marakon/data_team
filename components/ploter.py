@@ -1,10 +1,10 @@
-import matplotlib as mpl
+#!/usr/bin/env python
 import matplotlib.pyplot as plt
 import logging
 
-log = logging.getLogger(__name__)
+__author__ = "Mateusz Osinski"
 
-mpl.rcParams['font.size'] = 5.0
+log = logging.getLogger(__name__)
 
 class Plot:
     def __init__(self, values, label, both):
@@ -24,7 +24,7 @@ class Plot:
     def save_bar(self):
         log.info("Plotting bar plot of given data.")
         plt.style.use('ggplot')
-        plt.bar(self.both, self.values, color='green', width=30)
+        plt.bar(self.both, self.values, color='green', width=0.2)
         plt.xticks(self.both, self.label)
         fig1 = plt.gcf()
         fig1.savefig("bar_plot.png", dpi=700)

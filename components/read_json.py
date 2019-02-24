@@ -1,5 +1,8 @@
+#!/usr/bin/env python
 import os, json, logging
 import pandas as pd
+
+__author__ = "Mateusz Osinski"
 
 log = logging.getLogger(__name__)
 
