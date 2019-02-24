@@ -4,7 +4,7 @@ import logging
 
 log = logging.getLogger(__name__)
 
-mpl.rcParams['font.size'] = 6.0
+mpl.rcParams['font.size'] = 5.0
 
 class Plot:
     def __init__(self, values, label, both):
