@@ -24,9 +24,11 @@ class Plot:
     def save_bar(self):
         log.info("Plotting bar plot of given data.")
         plt.style.use('ggplot')
-        plt.bar(self.both, self.values, color='green', width=0.2)
-        plt.xticks(self.both, self.label)
+        plt.bar(self.both, self.values, color='olive', width=0.2)
+        plt.xticks(self.both, self.label, rotation=15)
         fig1 = plt.gcf()
-        fig1.savefig("bar_plot.png", dpi=700)
+        fig1.set_size_inches(8, 6)
+
+        fig1.savefig("bar_plot.png", dpi=200)
         print("Time for you to rename the saved plot file!\n")
         plt.show()

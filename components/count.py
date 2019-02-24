@@ -12,9 +12,10 @@ class Count:
         log.info("Preparing data for calculation.")
         values = [0]*self.df_head
         label = [0]*self.df_head
+        both = [0]*self.df_head
         for i in range(0, self.df_head):
             values[i] = self.df.iloc[i]
-            label[i] = self.df.index[i] + str(f'\n{values[i]}')
+            label[i] = str(f'{self.df.index[i]} \n{values[i]}')
         both = [i for i, _ in enumerate(values)]
         return values, label, both
 
@@ -70,10 +71,4 @@ class Count:
         log.info("Counting domain statuses.")
         self.df_head = data.domain_status.value_counts().head().count()
         self.df = data.domain_status.value_counts()
-        return df_head, df
-
-    def top_active_domains(self, data):
-        log.info("Counting top 5 most active domains for FSE.")
-        self.df_head = data.workgroup_id.value_counts().head(5).count()
-        self.df = data.workgroup_id.value_counts()
         return df_head, df

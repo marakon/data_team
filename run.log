@@ -1,0 +1,56 @@
+24-02-19 20:24:36 components.read_json INFO     Dividing data between raw_fse and raw_dd.
+24-02-19 20:24:36 main_core    INFO     Domain data:
+24-02-19 20:24:36 main_core    INFO     File System Event data:
+24-02-19 20:24:36 main_core    INFO     data/fse_data-000000000000.json
+24-02-19 20:24:36 main_core    INFO     data/fse_data-000000000000 copy.json
+24-02-19 20:24:36 components.read_json INFO     Feating data from raw data/fse_data-000000000000.json.
+24-02-19 20:24:36 components.read_json INFO     Feating data from raw data/fse_data-000000000000 copy.json.
+24-02-19 20:24:37 components.count INFO     Counting activity each hour for FSE.
+24-02-19 20:24:37 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:37 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 20:24:37 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:37 matplotlib.font_manager DEBUG    findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Users/mateusz/anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+24-02-19 20:24:37 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:37 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:39 components.count INFO     Counting top 5 most used apps for FSE.
+24-02-19 20:24:39 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:39 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 20:24:39 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:39 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:39 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:40 components.count INFO     Counting actions for FSE per continent.
+24-02-19 20:24:40 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:40 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 20:24:40 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:40 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:40 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:40 components.count INFO     Counting activity each hour for FSE.
+24-02-19 20:24:40 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:40 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 20:24:40 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:41 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:41 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:42 components.count INFO     Counting top 5 most used apps for FSE.
+24-02-19 20:24:42 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:42 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 20:24:42 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:42 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:42 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:42 components.count INFO     Counting actions for FSE per continent.
+24-02-19 20:24:42 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:42 components.ploter INFO     Plotting bar plot of given data.
+24-02-19 20:24:42 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:43 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:43 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:43 components.count INFO     Counting top 5 actions for FSE.
+24-02-19 20:24:43 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:43 components.ploter INFO     Plotting pie plot of given data.
+24-02-19 20:24:43 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:44 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:44 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:45 components.count INFO     Counting top 5 actions for FSE.
+24-02-19 20:24:45 components.count INFO     Preparing data for calculation.
+24-02-19 20:24:45 components.ploter INFO     Plotting pie plot of given data.
+24-02-19 20:24:45 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:46 matplotlib.axes._base DEBUG    update_title_pos
+24-02-19 20:24:46 matplotlib.axes._base DEBUG    update_title_pos
